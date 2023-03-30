@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>你爹</title>
+<style type="text/css">
+    @keyframes ani_hover
+    {
+        from {transform: rotateX(0deg);}
+        to {transform: rotateX(359deg);}
+    }
+    @keyframes mov
+    {
+        from {
+            transform: translate(0px, 0px);            
+        }
+        to {
+            transform: translate(800px, 800px);           
+        }
+    }
+    img {
+        max-width: 20%;
+        height: auto;
+    }
+    div#fish
+    {
+        animation: mov 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    div:hover#fish1
+    {
+        animation: ani_hover 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+    div:hover#fish2
+    {
+        animation: ani_hover 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+</style>
+
+</head>
+<body>
+    <div id="fish">
+        <div id="fish1">
+            <img src="fish1.png" alt="fish1">
+        </div>
+
+        <div id="fish2">
+            <img src="fish2.png" alt="fish2">
+        </div>
+    </div>
+    <div id="fish">
+        <div id="fish2">
+            <img src="fish2.png" alt="fish2">
+        </div>
+    </div>
+       
+</body>
+
+
+</html>
